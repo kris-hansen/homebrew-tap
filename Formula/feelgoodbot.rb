@@ -5,21 +5,21 @@
 class Feelgoodbot < Formula
   desc "Malware detection for macOS - know when you've been compromised"
   homepage "https://feelgoodbot.com"
-  version "0.1.9"
+  version "0.1.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kris-hansen/feelgoodbot/releases/download/v0.1.9/feelgoodbot_0.1.9_darwin_amd64.tar.gz"
-      sha256 "421e2f42fd97ade7828cb66596adf12a77e05f5779209dd998516ee0281c39bb"
+      url "https://github.com/kris-hansen/feelgoodbot/releases/download/v0.1.10/feelgoodbot_0.1.10_darwin_amd64.tar.gz"
+      sha256 "3172757ed1c802354fbdecd1ff6a88cf69831e66148e9a429adacfd7eaf8e825"
 
       define_method(:install) do
         bin.install "feelgoodbot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kris-hansen/feelgoodbot/releases/download/v0.1.9/feelgoodbot_0.1.9_darwin_arm64.tar.gz"
-      sha256 "f92f53e0b0cbcf726cdd27711a5d50cf6bb5ac3afdfb9a0a6d8711ae1366e386"
+      url "https://github.com/kris-hansen/feelgoodbot/releases/download/v0.1.10/feelgoodbot_0.1.10_darwin_arm64.tar.gz"
+      sha256 "8278c4c344a3a82bfcf070d29292e42c55a9a317046833800888caabadd88a48"
 
       define_method(:install) do
         bin.install "feelgoodbot"
@@ -29,15 +29,15 @@ class Feelgoodbot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kris-hansen/feelgoodbot/releases/download/v0.1.9/feelgoodbot_0.1.9_linux_amd64.tar.gz"
-      sha256 "31eddeb5dc236ebc325b23088a6478f8a47ef84f727495db02c3a78a17a52523"
+      url "https://github.com/kris-hansen/feelgoodbot/releases/download/v0.1.10/feelgoodbot_0.1.10_linux_amd64.tar.gz"
+      sha256 "6ff4e9a7d24f6c61001bdbc94d206e9b8e83c636feb3f71fb0bcb44f7abc150b"
       define_method(:install) do
         bin.install "feelgoodbot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kris-hansen/feelgoodbot/releases/download/v0.1.9/feelgoodbot_0.1.9_linux_arm64.tar.gz"
-      sha256 "6ac58480dbcf245b85f5bb73b1f7408fef22841d02ab7251ce6ca19108759846"
+      url "https://github.com/kris-hansen/feelgoodbot/releases/download/v0.1.10/feelgoodbot_0.1.10_linux_arm64.tar.gz"
+      sha256 "e5b3ed0261737aa76210a979d125085c5351617d66e8bc60af0d39f67f04902b"
       define_method(:install) do
         bin.install "feelgoodbot"
       end
